@@ -7,6 +7,8 @@ public class p6 {
         System.out.println("Enter n");
         n = sc.nextInt();
         int a[] = new int[n];
+        for (int i = 0; i < n; i++) 
+            a[i] = sc.nextInt();
 
         for (int i = 0, j = 0; i < n; i++) {
             if (a[i] != 0 && a[j] == 0) {
@@ -19,7 +21,7 @@ public class p6 {
             }
         }
 
-        for (int i = 0; i <= 5; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.println(a[i]);
         }
 
@@ -27,4 +29,4 @@ public class p6 {
     }
 }
 
-//
+// 1 2 0 4 3 0 5 0
