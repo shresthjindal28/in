@@ -7,9 +7,22 @@ public class p6 {
         System.out.println("Enter n");
         n = sc.nextInt();
         int a[] = new int[n];
-        for (int i = 0; i < n; i++) 
+        for (int i = 0; i < n; i++)
             a[i] = sc.nextInt();
+        //to print all 0 below non 0 elements
+        // for (int i = 0, j = 0; i < n; i++) {
+        // if (a[i] != 0 && a[j] == 0) {
+        // int temp = a[i];
+        // a[i] = a[j];
+        // a[j] = temp;
+        // }
+        // if (a[j] != 0) {
+        // j++;
+        // }
+        // }
 
+
+        //to print all 0 above non 0 elements
         for (int i = 0, j = 0; i < n; i++) {
             if (a[i] != 0 && a[j] == 0) {
                 int temp = a[i];
@@ -17,7 +30,7 @@ public class p6 {
                 a[j] = temp;
             }
             if (a[j] != 0) {
-                j++;
+                j--;
             }
         }
 
