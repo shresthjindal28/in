@@ -67,6 +67,7 @@ public class idk {
     public static void main(String[] Args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the postfix expression:");
+        
         String s = sc.nextLine();
         String[] exp = s.split(" ");
         System.out.println(evaluatePostfix(exp));
